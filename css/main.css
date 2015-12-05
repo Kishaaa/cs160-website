@@ -255,7 +255,12 @@ body .text-color2
 
 .portfolio
 {	
-	padding: 100px 0px
+	padding: 0px;
+}
+
+.pushfooter
+{
+	margin-top: -2px;
 }
 
 .portfolio #portfolio-introduction
@@ -360,9 +365,12 @@ body .text-color2
 
 .footer
 {
-	background: url(../img/footer-bg.jpg) repeat-x left bottom #000;
+	background: #000;
 	/*padding-top: 200px;*/
 }
+
+
+
 
 #contact
 {
@@ -631,6 +639,7 @@ body .text-color2
 		float: right;
 	}
 }
+
 
 
 /* Large desktop */

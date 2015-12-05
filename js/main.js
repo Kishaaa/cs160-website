@@ -12,7 +12,7 @@ $(document).ready(function()
 			var servicesHeight		= $("#services").height();
 
 			$('.section1').css('height', newSecOneHeight);
-			$('.section1').css('padding-top', ((newSecOneHeight/2)-(secOneContentHeight/2))+"px")
+			$('.section1').css('padding-top', ((newSecOneHeight/2.2)-(secOneContentHeight/2))+"px")
 
 
 
@@ -29,9 +29,9 @@ $(document).ready(function()
 			});
 
 			//set footer top/bottom paddings
-			var footerPadding 	= ((windowHeight-footerHeight))+"px";
+			var footerPadding 	= ((windowHeight-footerHeight)/2)+"px";
 			var aboutPadding	= (windowHeight-aboutHeight)/2+"px";
-			var servicesPadding	= 20+"px";
+			var servicesPadding	= (windowHeight-aboutHeight)/2.5+"px";
 
 			$('#about').css({'padding-top':aboutPadding, 'padding-bottom':aboutPadding})
 			$('#contact').css({'padding-top':footerPadding, 'padding-bottom':footerPadding})

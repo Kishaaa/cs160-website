@@ -5,13 +5,18 @@
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,100,400italic,500,700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="css/main.css">
-	
+	<link rel="stylesheet" type="text/css" media="all" href="owl/owl.carousel.css">
+	<link rel="stylesheet" type="text/css" media="all" href="owl/owl.theme.css">
+	<link rel="stylesheet" type="text/css" media="all" href="owl/owl.transitions.css">
+
 
 	<script type="text/javascript" src="js/jquery.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="js/singlepagenav.js"></script>
 	<script type="text/javascript" src="js/queryloader.js"></script>	
 	<script type="text/javascript" src="js/main.js"></script>
+
+	<script src="owl/owl.carousel.min.js"></script>
 
 	<meta charset="UTF-8">
 	<meta name="description" content="CouseCrazy! - Take courses online!">
@@ -58,12 +63,23 @@
 				</div>
 				<div class="row">
 					<p>
-						An online school which will enhance your knowledge.
+						An online school which will enchance your knowledge.
 					</p>
+					</div>
+					<br>
+				<div class="row">
+				  <p> <input class="form-control-search" type="search"> <input class="btn-search btn-success" type="button" name="Learn!" id="Learn!" value="LEARN">
+				  </p>
+				  
+			  </div>
+
+			</div>
 				</div>
-                <div class="row">
+				<br>
+				<br>
+				 <div class="row">
                 	<p>
-                    	<a href = "browse.php" >Start browsing now!</a>
+                    	<a href = "browse.php" ><img src="img/browse.png"></a>
                     </p>
                 </div>
 			</div>
@@ -86,67 +102,25 @@
 						</p>
 					</div>
 				</div>
-				<div class="row team">
-					<div class="col-md-4">
-						<img src="img/team/user2.png" class="img-responsive">
-						<h3 class="team-name">Video Previews</h3>
-						<h4 class="team-subtitle">Feature One</h4>
-						<p class="team-details">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam aliquet dolor nec diam pharetra, eu sodales massa euismod. Maecenas ut tellus sit amet lectus molestie dapibus. Quisque fermentum rutrum felis, nec hendrerit diam mollis vitae. Integer sodales varius odio, vel pharetra ante rhoncus vel. Phasellus quis urna rutrum, molestie purus. 
-						</p>
-					</div>
-					<div class="col-md-4">
-						<img src="img/team/user1.png" class="img-responsive">
-						<h3 class="team-name">Wild Card Learning</h3>
-						<h4 class="team-subtitle">Feature Two</h4>
-						<p class="team-details">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam aliquet dolor nec diam pharetra, eu sodales massa euismod. Maecenas ut tellus sit amet lectus molestie dapibus. Quisque fermentum rutrum felis, nec hendrerit diam mollis vitae. Integer sodales varius odio, vel pharetra ante rhoncus vel. Phasellus quis urna rutrum, molestie purus. 
-						</p>
-					</div>
-					<div class="col-md-4">
-						<img src="img/team/user3.png" class="img-responsive">
-						<h3 class="team-name">Recommended Courses</h3>
-						<h4 class="team-subtitle">Feature Three</h4>
-						<p class="team-details">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam aliquet dolor nec diam pharetra, eu sodales massa euismod. Maecenas ut tellus sit amet lectus molestie dapibus. Quisque fermentum rutrum felis, nec hendrerit diam mollis vitae. Integer sodales varius odio, vel pharetra ante rhoncus vel. Phasellus quis urna rutrum, molestie purus. 
-						</p>
-					</div>
-				</div>
 			</div>
 		</div>
-		<div class="section section3" id="services">
-			<div class="container">
-				<div class="row">
-					<div class="col-sm-6 col-md-3 service-item">
-						<img src="img/print.png" title="Web design" class="img-responsive">
-						<h3>Voice Over</h3>
-						<p>
-							This type of instruction is done when a professor is displaying slides on a screen and speaking in the background for students to follow along.
-						</p>
-					</div>
-					<div class="col-sm-6 col-md-3 service-item">
-						<img src="img/branding.png" title="Web development" class="img-responsive">
-						<h3>Film Lessons</h3>
-						<p>
-							Is a collage of informational videos for students so that they can learn through a story process by watching documentaries and educational videos.
-						</p>
-					</div>
-					<div class="col-sm-6 col-md-3 service-item">
-						<img src="img/web-design.png" title="Print media design" class="img-responsive">
-						<h3>Instructional</h3>
-						<p>
-							When an instuctor is phycisally teaching a class and it has been recorded for students to follow aling at home and watch at their own convenience.
-						</p>
-					</div>
-					<div class="col-sm-6 col-md-3 service-item">
-						<img src="img/web-dev.png" title="Branding" class="img-responsive">
-						<h3>Lab Learning</h3>
-						<p>
-							This is when labs are done with a professor step by step so that you are able to follow along at your own pace.
-						</p>
-					</div>
-				</div>
+		<div class="section section3"  id="services">
+			<div class="owlcontainer">
+			  <div id="slider"> 
+			    <div id="owl-demo" class="owl-carousel owl-theme">
+			        <div class="owlitem"><iframe width="700" height="394" src="https://www.youtube.com/embed/Ab5nmQc8CHY" frameborder="0" allowfullscreen></iframe></div>
+			        <div class="owlitem"><iframe width="700" height="394" src="https://www.youtube.com/embed/J14DZ0J5O5k" frameborder="0" allowfullscreen></iframe></div>
+			        <div class="owlitem"><iframe width="700" height="394" src="https://www.youtube.com/embed/guZeAjdYw_c" frameborder="0" allowfullscreen></iframe></div>
+			        <div class="owlitem"><iframe width="700" height="394" src="https://www.youtube.com/embed/_WGD5UhqShI" frameborder="0" allowfullscreen></iframe></div>
+			        
+
+			     </div>
+			  </div>
+			  <p class="slidertext">Watch videos of a real courses to see what type of learning style is best fit for yourself and if the material is something that will be to your interest.</p>
 			</div>
+			</div>
+
+
 		</div>
 		<div class="section section4" id="work">
 			<div class="portfolio clearfix">
@@ -402,7 +376,7 @@
 			</div>
 		</div>
 
-		<div class="section section5 footer" id="contact">
+		<div class="section section5 footer pushfooter" id="contact">
 			<div class="container">
 				<div class="row">
 					<h3 id="contact-us-header">Recommendations</h3>
@@ -450,5 +424,6 @@
 
 		</div>
 	</div>
+	<script type="text/javascript" src="owl/script.js"></script>
 </body>
 </html>
