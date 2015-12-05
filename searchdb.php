@@ -38,6 +38,21 @@ include("dbconnect.php");
     
     return $search_results;
 	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	else
 	{
 		$query = $conp->query("
