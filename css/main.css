@@ -266,6 +266,10 @@ body .text-color2
 	margin-top: -2px;
 }
 
+.lefttext{
+	text-align: left;
+}
+
 .portfolio #portfolio-introduction
 {
 	margin-bottom: 100px;
@@ -390,7 +394,7 @@ body .text-color2
 	margin-bottom: 50px
 }
 
-#contact #contact-form input[type=submit]
+#contact #contact-form-new input[type=submit]
 {
 	background-color:#C54D8D;
 	border:1px solid #882565																																																																																																																																																																						
@@ -401,10 +405,10 @@ body .text-color2
 	text-align: left;
 }
 
-#contact #contact-form label
+#contact #contact-form-new label
 {
-	font-size: 16px;
-	font-weight: lighter;
+	font-size: 20px;
+	font-weight: 300;
 }
 
 #contact .contact-description p
