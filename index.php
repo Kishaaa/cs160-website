@@ -206,12 +206,12 @@ $random_courses = returnSixRandomCourses();
 												<p>Class is hosted by '.$row->site.'</p>
 	                                            <p><b>Course Duration:    </b>'.$row->course_length.' weeks</p>
 												<p><b>Start Date:    </b>'.$row->start_date.' weeks</p>
-	                                            <p>Course Fee:  '.$row->course_fee.' <br /> </p>
-												<p>Languages offered: '.$row->language.' <br /> </p>
-												<p>Certification: '.$row->certificate.' <br /> </p>
+	                                            <p><b>Course Fee:</b>  '.$row->course_fee.' <br /> </p>
+												<p><b>Languages offered:</b> '.$row->language.' <br /> </p>
+												<p><b>Certification:</b> '.$row->certificate.' <br /> </p>
 												<p><br /><br />'.$row->short_desc.' <br /> </p>
 												<p>'.$row->video_link.' <br /> </p>
-												<p style ="font-size:30px"><a href="'.$row->course_link.'">Check the course out today <br /></a> </p>
+												<p style ="font-size:30px"><a href="'.$row->course_link.'" target="_blank">Check the course out today <br /></a> </p>
 												
 												
 												

@@ -166,28 +166,28 @@ else
 						<div class="hidden-item">
 							<img src="'.$row->course_image.'" title="'.$row->title.'" data-axisX="20" data-axisY="10">
 						</div>
+
 						<div class="modal fade portfolio-popup" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
 	                        <div class="modal-dialog modal-lg">
 	                            <div class="modal-content">
 	                                <div class="row">
 	                                    <div class="col-xs-12">
-	                                        <div class="portfolio-item-description">
+	                                        <div class="portfolio-item-description" id="portfolio-items-pop">
 	                                            <h3>'.$row->title.'</h3>
 												<p>Class is hosted by '.$row->site.'</p>
 	                                            <p><b>Course Duration:    </b>'.$row->course_length.' weeks</p>
 												<p><b>Start Date:    </b>'.$row->start_date.' weeks</p>
-	                                            <p>Course Fee:  '.$row->course_fee.' <br /> </p>
-												<p>Languages offered: '.$row->language.' <br /> </p>
-												<p>Certification: '.$row->certificate.' <br /> </p>
+	                                            <p><b>Course Fee:</b>  '.$row->course_fee.' <br /> </p>
+												<p><b>Languages offered:</b> '.$row->language.' <br /> </p>
+												<p><b>Certification:</b> '.$row->certificate.' <br /> </p>
 												<p><br /><br />'.$row->short_desc.' <br /> </p>
 												<p>'.$row->video_link.' <br /> </p>
-												<p style ="font-size:30px"><a href="'.$row->course_link.'">Check the course out today <br /></a> </p>
+												<p style ="font-size:30px"><a href="'.$row->course_link.'" target="_blank">Check the course out today <br /></a> </p>
 												
 												
 												
 												<p></p>
 												<p></p>
-	                                            <p>End product is powered with Wordpress.</p>
 	                                            <div class="labels">
 	                                            	<span class="label label-default">'.$row->language.'</span>
 													<span class="label label-primary">'.$row->course_fee.'$</span>
@@ -197,7 +197,7 @@ else
 	                                        </div>
 	                                    </div>
 	                                    <div class="col-xs-12">
-	                                        <div class=\'popup-image-container\'>
+	                                        <div class=\'popup-image-container\' id="portfolio-items-pop">
 	                                            <p><br /><br />'.$row->long_desc.' <br /> </p>
 	                                        </div>
 	                                    </div>
@@ -244,7 +244,9 @@ else
 	
 </div>
 
-<div> <p> <a href="index.html">Test</a></p> </div>
+<div> <p> <a href="http://www.sjsu-cs.org/cs160/sec1group3"><img src="img/back.png"></a></p> </div>
+<br>
+<br>
 </body>
 
 </html>
