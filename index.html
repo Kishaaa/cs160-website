@@ -294,18 +294,14 @@
       <h3 id="contact-us-header">Recommendations</h3>
     </div>
     <div class="row">
-      <div class="col-md-5 contact-description">
+      <div class="contact-description">
         <p>We are bunch of open minded people. So, we are really keen to know what you want to learn next.</p>
         <p>Furthermore, if you would like suggestions to what you can learn about next, fill out the following form and we would be happy to give you usefull recommendations. Our systems will search course that would be a good fit to your ability and fit your duration desires.</p>
-        <p><strong>Art<br>
-          Science<br>
-          History<br>
-          Technology<br>
-          Math<br>
-          </strong></p></div>
-        <div class="col-md-offset-1 col-md-6">
+      </div>
+        
           <div id="form_container">
-            <form id="contact-form" class="appnitro"  method="post" action="">
+            <form id="contact-form-new"  method="post" action="">
+              <article>
               <ul >
                 <li id="li_3" >
                   <label class="description" for="element_3">Course Duration </label>
@@ -324,38 +320,36 @@
                 <li id="li_1" >
                   <label class="description" for="element_1">Start Date </label>
                   <span>
-                  <input id="element_1_1" name="element_1_1" class="element text" size="2" maxlength="2" value="" type="text">
+                  <input id="element_1_3" name="element_1_3" class="element text" size="6" maxlength="4" value="" type="text">
+                  /
+                  <label for="element_1_3">YYYY</label>
+                  </span><span>
+                  <input id="element_1_1" name="element_1_1" class="element text" size="4" maxlength="2" value="" type="text">
                   /
                   <label for="element_1_1">MM</label>
                   </span> <span>
-                  <input id="element_1_2" name="element_1_2" class="element text" size="2" maxlength="2" value="" type="text">
-                  /
+                  <input id="element_1_2" name="element_1_2" class="element text" size="4" maxlength="2" value="" type="text">
+                  
                   <label for="element_1_2">DD</label>
-                  </span> <span>
-                  <input id="element_1_3" name="element_1_3" class="element text" size="4" maxlength="4" value="" type="text">
-                  <label for="element_1_3">YYYY</label>
-                  </span> <span id="calendar_1"> <img id="cal_img_1" class="datepicker" src="calendar.gif" alt="Pick a date."> </span> 
+                  </span><span id="calendar_1"> <img id="cal_img_1" class="datepicker" src="img/calendar.gif" alt="Pick a date."> </span> 
                   <script type="text/javascript">
-			Calendar.setup({
-			inputField	 : "element_1_3",
-			baseField    : "element_1",
-			displayArea  : "calendar_1",
-			button		 : "cal_img_1",
-			ifFormat	 : "%B %e, %Y",
-			onSelect	 : selectDate
-			});
-		</script> 
+      Calendar.setup({
+      inputField   : "element_1_3",
+      baseField    : "element_1",
+      displayArea  : "calendar_1",
+      button     : "cal_img_1",
+      ifFormat   : "%B %e, %Y",
+      onSelect   : selectDate
+      });
+    </script> 
                 </li>
                 <li id="li_2" >
                   <label class="description" for="element_2">Course Fee </label>
                   <span class="symbol">$</span> <span>
                   <input id="element_2_1" name="element_2_1" class="element text currency" size="10" value="" type="text" />
-                  .
+                  
                   <label for="element_2_1">Dollars</label>
-                  </span> <span>
-                  <input id="element_2_2" name="element_2_2" class="element text" size="2" maxlength="2" value="" type="text" />
-                  <label for="element_2_2">Cents</label>
-                  </span> </li>
+                  </span>  </li>
                 <li id="li_4" >
                   <label class="description" for="element_4">Languages </label>
                   <span>
@@ -371,9 +365,9 @@
                   <input id="saveForm" class="button_text" type="submit" name="submit" value="Submit" />
                 </li>
               </ul>
-            </form>
-          
-        </div>
+            </article>
+            </form>      
+        
       </div>
     </div>
   </div>
