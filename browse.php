@@ -4,120 +4,72 @@ include("dbconnect.php");
 
 include("searchdb.php");
 if ( isset( $_GET['s'] ) ) {
-
-  require_once( dirname( __FILE__ ) . '/searchdb.php' );
-  
-
- 
-  
+  require_once( dirname( __FILE__ ) . '/searchdb.php' ); 
   $search_term = htmlspecialchars($_GET['s'], ENT_QUOTES);
-  
-  
   $search_results = searchTheDatabase($search_term,$conn);
 }
 else
 {
 	require_once( dirname( __FILE__ ) . '/searchdb.php' );
-  
- 
 	$search_term ="What are ya buyin?";
 	$search_results = searchTheDatabase($search_term,$conn);
 }
 ?>
 <html>
 <head>
-	<title>CourseCrazy!</title>
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-	<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,100,400italic,500,700' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" type="text/css" href="css/browse.css">
-	
-
-	<script type="text/javascript" src="js/jquery.js"></script>
-	<script type="text/javascript" src="js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="js/singlepagenav.js"></script>
-	<script type="text/javascript" src="js/queryloader.js"></script>	
-	<script type="text/javascript" src="js/main.js"></script>
-
-	<meta charset="UTF-8">
-	<meta name="description" content="CouseCrazy! - Take courses online!">
-	<meta name="keywords" content="educational, learning, school, college, CS160, Software Engineering, HTML,CSS,XML,JavaScript">
-	<meta name="author" content="CourseCrazy!">
-	
-	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-
-	<link rel="icon" type="image/png"  href="img/fav.png" />
-    
-    
-   
-	
+<title>CourseCrazy!</title>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,100,400italic,500,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="css/browse.css">
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/singlepagenav.js"></script>
+<script type="text/javascript" src="js/queryloader.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<meta charset="UTF-8">
+<meta name="description" content="CouseCrazy! - Take courses online!">
+<meta name="keywords" content="educational, learning, school, college, CS160, Software Engineering, HTML,CSS,XML,JavaScript">
+<meta name="author" content="CourseCrazy!">
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rel="icon" type="image/png"  href="img/fav.png" />
 </head>
 
-
-
 <body>
-	
-	
-	<div class="navbar navbar-inverse navbar-fixed-top top-nav" role="navigation">
-
-      <div class="container">
-
-        <div class="navbar-header">
-
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-
-            <span class="sr-only">Toggle navigation</span>
-
-            <span class="icon-bar"></span>
-
-            <span class="icon-bar"></span>
-
-            <span class="icon-bar"></span>
-
-          </button>
-
-          <a class="navbar-brand" href="#">
-
-          	<img id="toplogo" src="img/pm-brand.png" title="CourseCrazy! Logo">
-
-          </a>
-
-        </div>
-
-        <div class="collapse navbar-collapse ">
-
-          <ul class="nav navbar-nav">
-
-            <li><a href="#" id="toindex">Home</a></li>
-
-            <li><a href="#" id="tobrowse">Random</a></li>
-
-            <li><a href="#" id="recc">Recommendations</a></li>
-			<li><div class="search-form">
-      <form action="" method="get">
-        <div class="form-field">
-          
-          <input type="search" name="s" placeholder="Enter your search term..." results="5" value="<?php echo $search_term; ?>">
-          <input type="submit" value="Search">
-        </div>
-      </form>
-    </div></li>
-
-          </ul>
-			
-        </div><!--/.nav-collapse -->
-
-      </div>
-
+<div class="navbar navbar-inverse navbar-fixed-top top-nav" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+      <a class="navbar-brand" href="#"> <img id="toplogo" src="img/pm-brand.png" title="CourseCrazy! Logo"> </a> </div>
+    <div class="collapse navbar-collapse ">
+      <ul class="nav navbar-nav">
+        <li><a href="#" id="toindex">Home</a></li>
+        <li><a href="#" id="toabout">About</a></li>
+        <li><a href="#" id="tobrowse">Random</a></li>
+        <li><a href="#" id="recc">Recommendations</a></li>
+        <li>
+          <div class="search-form">
+            <form action="" method="get" style="margin-top: 9px;">
+              <div class="form-field">
+                <input class="form-control-search-small" type="search" name="s" placeholder="Enter your search term..." results="5" value="<?php echo $search_term; ?>">
+                <input class="btn-search-small btn-success" type="submit" value="Search">
+              </div>
+            </form>
+          </div>
+        </li>
+      </ul>
     </div>
-
-
-
-
+    <!--/.nav-collapse --> 
+    
+  </div>
+</div>
 <script> 
 	document.getElementById("toindex").onclick = function () {
 		location.href = "http://www.sjsu-cs.org/cs160/sec1group3/";
 	}
 	
+	document.getElementById("toabout").onclick = function () {
+		location.href = "http://www.sjsu-cs.org/cs160/sec1group3/#about";
+	}
 	
 	document.getElementById("tobrowse").onclick = function () {
 		location.href = "http://www.sjsu-cs.org/cs160/sec1group3/#work";
@@ -134,15 +86,9 @@ else
 	}
 	
 	</script>
-
-				
-			
 </div>
-
-
- 
 <div class="section section4" id="work">
-<?php if ( $search_results ) : 
+  <?php if ( $search_results ) : 
 
 
 		print'</div>
@@ -225,28 +171,15 @@ else
 				
 				
 		}?>
-		
-		
-		
-				</div>
-				
-			</div>
-		</div>
-
-
-
-	
-  
-	
-    <?php endif; ?>
-	
-		
-	
 </div>
-
-<div> <p> <a href="http://www.sjsu-cs.org/cs160/sec1group3"><img src="img/back.png"></a></p> </div>
+</div>
+</div>
+<?php endif; ?>
+</div>
+<div>
+  <p> <a href="http://www.sjsu-cs.org/cs160/sec1group3"><img src="img/back.png"></a></p>
+</div>
 <br>
 <br>
 </body>
-
 </html>
