@@ -289,16 +289,16 @@ $random_courses = returnSixRandomCourses();
                   <label class="description" for="element_1">Start Date </label>
                   <span>
                   <input id="element_1_3" name="element_1_3" class="element text" size="6" maxlength="4" value="" type="text">
-                  /
-                  <label for="element_1_3">YYYY</label>
+                  —
+                  <label for="element_1_3" id="contact-form-new-small">YYYY</label>
                   </span><span>
                   <input id="element_1_1" name="element_1_1" class="element text" size="4" maxlength="2" value="" type="text">
-                  /
-                  <label for="element_1_1">MM</label>
+                  —
+                  <label for="element_1_1" id="contact-form-new-small">MM</label>
                   </span> <span>
                   <input id="element_1_2" name="element_1_2" class="element text" size="4" maxlength="2" value="" type="text">
                   
-                  <label for="element_1_2">DD</label>
+                  <label for="element_1_2" id="contact-form-new-small">DD</label>
                   </span><span id="calendar_1"> <img id="cal_img_1" class="datepicker" src="img/calendar.gif" alt="Pick a date."> </span> 
                   <script type="text/javascript">
       Calendar.setup({
@@ -316,7 +316,7 @@ $random_courses = returnSixRandomCourses();
                   <span class="symbol">$</span> <span>
                   <input id="element_2_1" name="element_2_1" class="element text currency" size="10" value="" type="text" />
                   
-                  <label for="element_2_1">Dollars</label>
+                  <label for="element_2_1" id="contact-form-new-small">Dollars</label>
                   </span>  </li>
                 <li id="li_4" >
                   <label class="description" for="element_4">Languages </label>

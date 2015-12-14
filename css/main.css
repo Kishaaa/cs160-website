@@ -416,6 +416,12 @@ article {
 	font-weight: 300;
 }
 
+#contact #contact-form-new-small label
+{
+font-size: 20px;
+    font-weight: 300;
+    }
+
 #contact .contact-description p
 {
 	font-size:20px;
